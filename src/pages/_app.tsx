@@ -1,6 +1,25 @@
-import "@/styles/globals.sass";
+import "../styles/globals.sass";
 import type { AppProps } from "next/app";
+// import { Layout } from "../components/Layout"
+import NextNProgress from 'nextjs-progressbar';
+import { NextIntlClientProvider } from 'next-intl';
+import { useRouter } from 'next/router';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+  const router = useRouter();
+
+  return (
+    <NextIntlClientProvider
+      locale={router.locale}
+      messages={pageProps.messages}
+    >
+      {/* <Layout> */}
+        <NextNProgress />
+        <Component {...pageProps} />
+      {/* </Layout> */}
+    </NextIntlClientProvider>
+  );
+};
+
+export default MyApp;

@@ -1,19 +1,51 @@
-.language-select
-    position: relative
-    width: 150px
-    margin: 50px auto
+@import "../../styles/variables"
 
-    & select
-        width: 100%
+.lang
+    display: flex
+    justify-content: center
+    margin-top: 10px
 
-.indicator
-    position: absolute
-    width: 100%
-    height: 2px
-    background-color: black
-    bottom: 0
-    left: 0
-    transition: transform 0.3s ease
+    &__select
+        position: relative
+        display: inline-block
+        cursor: pointer
+        transition: transform 0.3s ease // Animatsiya uchun o'zgartirishlar
 
-    &.active
-        transform: translateY(20px)
+    &__select.animateOut
+        transform: translateY(-20px) // Tepaga animatsiyasi
+
+    &__selected
+        background: $black
+        border-radius: 100%
+        color: $white
+        padding: 5px 10px
+        margin-right: 10px
+        transition: background-color 0.1s ease // Animatsiya uchun o'zgartirishlar
+
+    &__options
+        position: absolute
+        top: 100%
+        left: 0
+        background: $black
+        border-radius: 5px
+        padding: 5px
+        display: flex
+        flex-direction: column
+        width: 100px
+        opacity: 0
+        pointer-events: none
+        transition: opacity 0.1s ease // Animatsiya uchun o'zgartirishlar
+        transform: translateY(-20px) 
+
+    &__select:hover .lang__options
+        // opacity: 1
+        // pointer-events: auto
+
+    &__options span
+        color: $white
+        padding: 5px
+        cursor: pointer
+        transform: translateY(-20px) 
+
+    &__options span:hover
+        background: darken($black, 20%)
