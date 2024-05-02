@@ -1,31 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState , useEffect } from 'react';
 import styles from './index.module.sass';
 import { useRouter } from "next/router";
 import { useTranslations } from "next-intl";
 
 export const Lang = () => {
+    const [selectedLanguage, setSelectedLanguage] = useState('ru');
     const [animateOut, setAnimateOut] = useState(false);
     const t = useTranslations();
     const router = useRouter();
+    const [selectedLang, setSelectedLang] = useState(router.locale);
 
-    const handleChangeLanguage = (nextLanguage:any) => {
+    useEffect(() => {
+        if (selectedLang) {
+            router.push(router.asPath, undefined, {
+                locale: selectedLang,
+            });
+        }
+    }, [selectedLang]);
+
+    const handleClick = () => {
+        const nextLanguage = selectedLanguage === 'ru' ? 'uz' : selectedLanguage === 'uz' ? 'eng' : 'ru'; // Keyingi tilni aniqlash
         setAnimateOut(true); // Animatsiyani boshlash
         setTimeout(() => {
-            router.push(router.asPath, undefined, {
+            router.push(router.asPath , undefined    , {
                 locale: nextLanguage,
-            }); // Tilni almashtirish
+            })
+            setSelectedLanguage(nextLanguage); // Keyingi tilni hozirgi tilga o'zlashtirish
             setAnimateOut(false); // Animatsiyani tugatish
         }, 300); 
     };
 
     return (
         <div className={styles.lang}>
-            <div className={styles.lang__select}>
-                <span className={styles.lang__selected}>{router.locale?.toUpperCase()}</span>
+            <div className={styles.lang__select} onClick={handleClick}>
+                <span className={styles.lang__selected}>{selectedLanguage.toUpperCase()}</span>
                 <span className={`${styles.lang__options} ${animateOut ? styles.animateOut : ''}`}>
-                    <span onClick={() => handleChangeLanguage('ru')}>RU</span>
-                    <span onClick={() => handleChangeLanguage('uz')}>UZ</span>
-                    <span onClick={() => handleChangeLanguage('en')}>ENG</span>
+                    <span>RU</span>
+                    <span>UZ</span>
+                    <span>ENG</span>
                 </span>
             </div>
         </div>
