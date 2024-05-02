@@ -22,11 +22,13 @@ export const Lang = () => {
         const nextLanguage = selectedLanguage === 'ru' ? 'uz' : selectedLanguage === 'uz' ? 'eng' : 'ru'; // Keyingi tilni aniqlash
         setAnimateOut(true); // Animatsiyani boshlash
         setTimeout(() => {
-            router.push(router.asPath , undefined    , {
-                locale: nextLanguage,
-            })
             setSelectedLanguage(nextLanguage); // Keyingi tilni hozirgi tilga o'zlashtirish
             setAnimateOut(false); // Animatsiyani tugatish
+            setTimeout(() => {
+                router.push(router.asPath, undefined, {
+                    locale: nextLanguage,
+                });
+            }, 300);
         }, 300); 
     };
 
