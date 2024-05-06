@@ -80,14 +80,22 @@
             "form": {
                 "question": "Savollaringiz qoldimi?",
                 "contact": "Aloqani qoldiring, bizning menejerlar aloqa qilishadi va maslahat berishadi",
-                "name": "Ruslan Mariyarti",
+                "name": "Ruslan Marirti",
                 "nameCompany": "Kompaniya nomi",
-                "send": "Yuborish"
+                "send": "Yuborish" 
             },
             "footer": {
                 "adress": "O'zbekiston, Toshkent sh., Chilonzor 3, 44/1",
                 "reserved": "Huquqlar himoyalangan Mainstream Global",
                 "showOff": "Ruslan Mariyarti tomonidan dizayn qilingan"
+            },
+            "navbar" :{
+                "menuOne" : "Header",
+                "menuTwo" : "About us" , 
+                "menuThree" : "Contact",
+                "menuLast" : "Form" , 
+                "footerName" : "footer line " , 
+                "aboutNameKey" : "  "
             }
         }
     }

@@ -1,0 +1,16 @@
+@import "../../styles/variables"
+@import "../../styles/mixins"
+
+.navbar
+    width: 100%
+    height: 80px
+    display: flex
+    justify-content: space-between
+    background: $mainColor
+
+    &__menu
+        display: flex
+        list-style: none
+        gap: 20px
+        @include font(16px, $white , regular)
+        cursor: pointer
