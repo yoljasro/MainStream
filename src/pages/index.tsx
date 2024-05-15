@@ -6,6 +6,7 @@ import { Lang } from "@/components/Lang";
 import type { NextPage, GetStaticProps } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Form } from "@/components/Form";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/assets/img/logo.jpg" />
       </Head>
       <Navbar/>
+      <Form/>
       <Footer/>
       {/* <Lang/>  */}
     </>

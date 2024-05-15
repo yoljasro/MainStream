@@ -50,11 +50,11 @@ export const Navbar = () => {
             duration={500}
             className={styles.navbar__link}
           >
-            {t("menu.cases")}
+            {t("menu.cases")} 
           </Link>
         </li>
         <li>
-          <Link
+          <Link 
             activeClass="active"
             to="cases"
             spy={true}
@@ -63,7 +63,7 @@ export const Navbar = () => {
             duration={500}
             className={styles.navbar__link}
           >
-            {t("menu.courses")}
+            {t("menu.courses")} 
           </Link>
         </li>
       </ul>
