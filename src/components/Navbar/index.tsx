@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useTranslations } from "next-intl";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Lang } from '../Lang';
+import Image from 'next/image';
 
 export const Navbar = () => {
   const t = useTranslations()
@@ -12,9 +13,9 @@ export const Navbar = () => {
 
   return (
     <div className={styles.navbar}>
-      <h1>Logo</h1>
+      <Image src={'/assets/img/logoorg.png'} alt='logo' width={301} height={30}/>
       <ul className={styles.navbar__menu}>
-        <li>
+        <li className={styles.navbar__bar}>
           <Link
             activeClass="active"
             to="company"
@@ -22,12 +23,12 @@ export const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className={styles.navbar__link}
+            className={styles.navbar__link} 
           >
             {t("menu.company")}
           </Link>
         </li>
-        <li>
+        <li className={styles.navbar__bar}>
           <Link
             activeClass="active"
             to="services"
@@ -40,7 +41,7 @@ export const Navbar = () => {
             {t("menu.services")}
           </Link>
         </li>
-        <li>
+        <li className={styles.navbar__bar}>
           <Link
             activeClass="active"
             to="cases"
@@ -53,7 +54,7 @@ export const Navbar = () => {
             {t("menu.cases")} 
           </Link>
         </li>
-        <li>
+        <li className={styles.navbar__bar}>
           <Link 
             activeClass="active"
             to="cases"
