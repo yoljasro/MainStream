@@ -19,8 +19,8 @@ export default function Home() {
         <link rel="icon" href="/assets/img/logo.jpg" />
       </Head>
       <Navbar/>
-      <Form/>
-      <Footer/>
+      {/* <Form/> */}
+      {/* <Footer/> */}
       {/* <Lang/>  */}
     </>
   );
