@@ -8,6 +8,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Form } from "@/components/Form";
 import { Video } from "@/components/Video";
+import { InNumbers } from "@/components/InNumbers";
+import {SMM} from "@/components/SMM"
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -21,6 +23,8 @@ export default function Home() {
       </Head>
       <Navbar/>
       <Video/>
+      {/* <InNumbers/> */}
+      <SMM/>
       {/* <Form/> */}
       {/* <Footer/> */}
       {/* <Lang/>  */}

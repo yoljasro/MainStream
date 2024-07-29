@@ -12,7 +12,7 @@ export const Service = () => {
 
   return (
     <div className={styles.service}>
-      <div className={styles.service}>
+      <div className={styles.service__cont}>
       </div>
     </div>
   )
