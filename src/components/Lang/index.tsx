@@ -19,7 +19,7 @@ export const Lang = () => {
     }, [selectedLang]);
 
     const handleClick = () => {
-        const nextLanguage = selectedLanguage === 'ru' ? 'uz' : selectedLanguage === 'uz' ? 'eng' : 'ru'; // Keyingi tilni aniqlash
+        const nextLanguage = selectedLanguage === 'ru' ? 'uz' : selectedLanguage === 'uz' ? 'en' : 'ru'; // Keyingi tilni aniqlash
         setAnimateOut(true); // Animatsiyani boshlash
         setTimeout(() => {
             setSelectedLanguage(nextLanguage); // Keyingi tilni hozirgi tilga o'zlashtirish
@@ -39,7 +39,7 @@ export const Lang = () => {
                 <span className={`${styles.lang__options} ${animateOut ? styles.animateOut : ''}`}>
                     <span>RU</span>
                     <span>UZ</span>
-                    <span>ENG</span>
+                    <span>EN</span>
                 </span>
             </div>
         </div>

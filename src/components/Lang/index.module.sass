@@ -4,11 +4,16 @@
     display: flex
     justify-content: center
     margin-top: 10px
+    font-family: nova-regular
+    width: 66px
+    height: 66px
 
     &__select
         position: relative
         display: inline-block
         cursor: pointer
+        width: 66px
+        height: 66px
         transition: transform 0.3s ease // Animatsiya uchun o'zgartirishlar
 
     &__select.animateOut
@@ -18,8 +23,11 @@
         background: $black
         border-radius: 100%
         color: $white
-        padding: 5px 10px
-        margin-right: 10px
+        padding: 14px 14px 17px 14px
+        width: 66px
+        height: 66px
+        text-align: center
+        // margin-right: 10px  
         transition: background-color 0.1s ease // Animatsiya uchun o'zgartirishlar
 
     &__options
@@ -28,14 +36,14 @@
         left: 0
         background: $black
         border-radius: 5px
-        padding: 5px
+        padding: 14px
         display: flex
         flex-direction: column
         width: 100px
         opacity: 0
         pointer-events: none
         transition: opacity 0.1s ease // Animatsiya uchun o'zgartirishlar
-        transform: translateY(-20px) 
+        transform: translateY(-20px)
 
     &__select:hover .lang__options
         // opacity: 1
@@ -44,8 +52,9 @@
     &__options span
         color: $white
         padding: 5px
+        font-family: nova-black
         cursor: pointer
-        transform: translateY(-20px) 
+        transform: translateY(-20px)
 
     &__options span:hover
         background: darken($black, 20%)

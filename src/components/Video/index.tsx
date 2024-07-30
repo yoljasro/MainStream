@@ -12,9 +12,7 @@ export const Video = () => {
 
   return (
     <div className={styles.video}>
-      <div className={styles.video__img}>
         <p className={styles.video__text}>Ролик Шоу рил</p>
-      </div>
     </div>
   )
 }

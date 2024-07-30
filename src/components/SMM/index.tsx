@@ -9,7 +9,6 @@ export const SMM = () => {
 
     return (
         <div className={styles.smm}>    
-           <Image className={styles.smm__image} src={'/assets/img/smm.png'} alt='smm'  width={1900} height={1300}/>
         </div>
     )
 }

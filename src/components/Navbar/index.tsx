@@ -14,6 +14,7 @@ export const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <Image src={'/assets/img/logoorg.png'} alt='logo' width={301} height={30}/>
+      <div className={styles.navbar__section}>
       <ul className={styles.navbar__menu}>
         <li className={styles.navbar__bar}>
           <Link
@@ -68,7 +69,10 @@ export const Navbar = () => {
           </Link>
         </li>
       </ul>
+
       <Lang />
+      <div className={styles.navbar__course}>Курсы</div>
+      </div>
     </div>
   )
 }
