@@ -9,31 +9,31 @@ export const InNumbers = () => {
 
     return (
         <div className={styles.numbers}>
-            <Image className={styles.numbers__mainstream} src={'/assets/img/mainstream.png'} alt='mainstream' width={1202} height={150} />
-            <Image className={styles.numbers__numb} src={'/assets/img/numb.png'} alt='mainstream' width={1000} height={150} />
+            <p className={styles.numbers__title}>Mainstream</p>
+            <p className={styles.numbers__numb}> в цифрах</p>
 
             <div className={styles.numbers__cards}>
-                <div className={styles.numbers__card}>
-                    <p>4+</p>
-                    <p>{t("statistic.market")}</p>
+                <div className={styles.numbers__cardone}>
+                    <p className={styles.numbers__number}>4+</p>
+                    <p className={styles.numbers__desc}>{t("statistic.market")}</p>
                 </div>
-                <div className={styles.numbers__card}>
-                    <p>3</p>
-                    <p>{t("statistic.filial")}</p>
+                <div className={styles.numbers__cardone}>
+                    <p className={styles.numbers__numbersecond}>3</p>
+                    <p className={styles.numbers__descsecond}>{t("statistic.filial")}</p>
                 </div>
-                <div className={styles.numbers__card}>
-                    <p>150+</p>
-                    <p>{t("statistic.projects")}</p>
+                <div className={styles.numbers__cardone}>
+                    <p className={styles.numbers__number}>150+</p>
+                    <p className={styles.numbers__desc}>{t("statistic.projects")}</p>
                 </div>
-                <div className={styles.numbers__card}>
-                    <p>15K</p>
-                    <p>{t("statistic.advertising")}</p>
+                <div className={styles.numbers__cardone}>
+                    <p className={styles.numbers__number}>15K</p>
+                    <p className={styles.numbers__desc}>{t("statistic.advertising")}</p>
                 </div>
-                <div className={styles.numbers__card}>
-                    <p>25+</p>
-                    <p>{t("statistic.employees")}</p>
+                <div className={styles.numbers__cardone}>
+                    <p className={styles.numbers__number}>25+</p>
+                    <p className={styles.numbers__desc}>{t("statistic.employees")}</p>
                 </div>
-                <div className={styles.numbers__card}>
+                <div className={styles.numbers__cardone}>
                     <p>200K </p>
                     <p>{t("statistic.lead")}</p>
                 </div>

@@ -10,6 +10,7 @@ import { Form } from "@/components/Form";
 import { Video } from "@/components/Video";
 import { InNumbers } from "@/components/InNumbers";
 import {SMM} from "@/components/SMM"
+import { Service } from "@/components/Service";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -23,8 +24,9 @@ export default function Home() {
       </Head>
       <Navbar/>
       <Video/>
-      {/* <InNumbers/> */}
-      <SMM/>
+
+      <Service/>
+      <InNumbers/>
       {/* <Form/> */}
       {/* <Footer/> */}
       {/* <Lang/>  */}
