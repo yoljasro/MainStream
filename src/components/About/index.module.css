@@ -36,3 +36,53 @@
 .about__card:nth-child(3) {
   background-image: url("/assets/img/about3.png");
 }
+
+.about__services {
+  margin-top: 188px;
+  width: 100%;
+}
+
+.about__title {
+  color: #766FB2;
+  font-family: contrax;
+  text-align: center;
+  font-size: 94px;
+}
+
+.about__media {
+  display: flex;
+  width: 100%;
+  gap: 11px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 67px;
+}
+
+.about__name {
+  width: 100%;
+  nax-width: 1031px;
+  height: 580px;
+  background-repeat: no-repeat;
+  background-image: url("/assets/img/service1.png");
+}
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about__list {
+  width: 100%;
+  max-width: 500px;
+  height: 283px;
+  background: #766FB2;
+}
+
+.about__img {
+  width: 100%;
+  width: 500px;
+  height: 283px;
+  background: #766FB2;
+}

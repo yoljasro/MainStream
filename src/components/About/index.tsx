@@ -18,6 +18,17 @@ export const About = () => {
         <div className={styles.about__card}>Реализуем</div>
         <div className={styles.about__card}>Продвигаем</div>
       </div> 
+
+      <div className={styles.about__services}>
+        <p className={styles.about__title}>Услуги</p>
+        <div className={styles.about__media}>
+            <div className={styles.about__name}></div>
+            <div className={styles.about__info}>
+                <div className={styles.about__list}></div>
+                <div className={styles.about__img}></div>
+            </div>
+        </div>
+      </div>
     </div>
   )
 }
