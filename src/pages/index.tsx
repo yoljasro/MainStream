@@ -31,6 +31,7 @@ export default function Home() {
       <InNumbers/>
       <Partners/>
       <Work/>
+      <SMM/>
       {/* <Form/> */}
       {/* <Footer/> */}
       {/* <Lang/>  */}
