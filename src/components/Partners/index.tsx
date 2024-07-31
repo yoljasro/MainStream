@@ -22,6 +22,7 @@ export const Partners = () => {
           <div className={styles.partners__line}></div>
           <div className={styles.partners__insta}>
           <FaInstagram className={styles.partners__icon} />
+          <p className={styles.partners__text}>Детальнее работы в ленте  instagram   нашего агенства </p>
           </div>
           </div>
         </div>
