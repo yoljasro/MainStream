@@ -63,6 +63,100 @@ export const About = () => {
                 <div className={styles.about__img}></div>
             </div>
         </div>
+
+        <div className={styles.about__media}>
+            <div className={styles.about__info}>
+                <div className={styles.about__list}>
+                    <ul className={styles.about__menu}>
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                        <li>Посты для социальных сетей</li>
+                        </div>
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>Motion ролики</li>
+                        </div>
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>Брендинг</li>
+                        </div>
+
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>Дизайн наружной рекламы</li>
+                        </div>
+
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>3D моделирование</li>
+                        </div>
+
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>VFX - ролики</li>
+                        </div>
+
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>Дизайн печатной продукции</li>
+                        </div>
+                    </ul>
+                </div>
+                <div className={styles.about__img}></div>
+            </div>
+            <div className={styles.about__name}>Дизайн</div>
+
+
+            
+
+        </div>
+
+        <div className={styles.about__media}>
+        <div className={styles.about__name}>Дизайн</div>
+
+            <div className={styles.about__info}>
+                <div className={styles.about__list}>
+                    <ul className={styles.about__menu}>
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                        <li>Посты для социальных сетей</li>
+                        </div>
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>Motion ролики</li>
+                        </div>
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>Брендинг</li>
+                        </div>
+
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>Дизайн наружной рекламы</li>
+                        </div>
+
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>3D моделирование</li>
+                        </div>
+
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>VFX - ролики</li>
+                        </div>
+
+                        <div className={styles.about__listCont}>
+                            <Image src={'/assets/img/triangle.png'} alt='tirangle'width={13.21} height={11.44}/>
+                            <li>Дизайн печатной продукции</li>
+                        </div>
+                    </ul>
+                </div>
+                <div className={styles.about__img}></div>
+            </div>
+
+
+            
+        </div>
       </div>
     </div>
   )
