@@ -13,6 +13,7 @@ import {SMM} from "@/components/SMM"
 import { Service } from "@/components/Service";
 import { Partners } from "@/components/Partners";
 import { Work } from "@/components/Work";
+import { About } from "@/components/About";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
       <Partners/>
       <Work/>
       <SMM/>
+      <About/>
       {/* <Form/> */}
       {/* <Footer/> */}
       {/* <Lang/>  */}
