@@ -8,7 +8,9 @@ export const SMM = () => {
     const t = useTranslations()
 
     return (
-        <div className={styles.smm}>    
+        <div className={styles.container}>
+            <div className={styles.container__smm}>
+            </div>
         </div>
     )
 }
