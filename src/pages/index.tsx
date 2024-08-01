@@ -27,7 +27,6 @@ export default function Home() {
       </Head>
       <Navbar/>
       <Video/>
-
       <Service/>
       <InNumbers/>
       <Partners/>

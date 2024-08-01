@@ -21,6 +21,7 @@ export const About = () => {
 
       <div className={styles.about__services}>
         <p className={styles.about__title}>Услуги</p>
+        <div className={styles.about__mediaContainer}>
         <div className={styles.about__media}>
             <div className={styles.about__name}>Дизайн</div>
             <div className={styles.about__info}>
@@ -157,6 +158,7 @@ export const About = () => {
 
             
         </div>
+      </div>
       </div>
     </div>
   )
