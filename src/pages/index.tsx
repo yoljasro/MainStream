@@ -34,7 +34,7 @@ export default function Home() {
       <SMM/>
       <About/>
       <Form/>
-      {/* <Footer/> */}
+      <Footer/>
       {/* <Lang/>  */}
     </>
   );

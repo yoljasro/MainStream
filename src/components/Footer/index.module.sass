@@ -5,5 +5,68 @@
     width: 100%
     background: $mainColor
     color: $white
-    height: 200px
+    height: 517px
     margin-top: 100px
+    display: flex
+    padding-left: 95px
+    padding-right: 156px
+    overflow: hidden
+
+    &__location
+        display: flex
+        color: #FFFFFF
+        flex-direction: column
+        padding-top: 115px
+
+    &__number
+        font-family: contrax
+        font-size: 33px
+        &:last-child
+            padding-top: 7px
+
+    &__email
+        font-family: nova-regular
+        font-size: 32px
+        padding-top: 7px
+
+    &__adress
+        font-size: 25px
+        font-family: nova-regular
+        padding-top: 15px
+        width: 100%
+        max-width: 267px
+
+    &__social
+        width: 100%
+        max-width: 1000px
+        height: 100vh
+        clip-path: polygon(50% 9%, 59% 0%, 120% 100%, -7% 100%)
+        // background-image: url("/assets/img/footerimage.png")
+        // background-repeat: no-repeat
+        background: #000000
+        margin-top: -100px
+        margin-left: -150px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+
+    &__menu
+        display: flex
+        flex-direction: column
+        gap: 6px
+        padding-top: 94px
+        padding-left: 205px
+
+        & ul
+            list-style: none
+            gap: 6px
+            display: flex
+            flex-direction: column
+            font-family: nova-regular
+            font-size: 32px
+
+            & li 
+                cursor: pointer
+                text-align: right
