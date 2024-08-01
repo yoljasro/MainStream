@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from './index.module.sass';
+import Image from 'next/image';
 
 interface FormData {
   name: string;
@@ -34,11 +35,12 @@ export const Form: React.FC = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.info}>
-          <h2 className={styles.info__title}>Contact Us</h2>
-          <p className={styles.info__description}>Please fill out the form below to get in touch with us.</p>
+          <p className={styles.info__title}>Остались вопросы?</p>
+          <p className={styles.info__description}>Оставьте контактные данные, наши менеджеры свяжутся с Вами и проконсультируют</p>
+          <Image className={styles.info__logo} src={'/assets/img/logoorg.png'} alt='logoorg' width={356} height={32}/>
         </div>
         <form className={styles.form} onSubmit={handleSubmit}>
-          <input
+          <input  
             type="text"
             name="name"
             placeholder="Your Name"

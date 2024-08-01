@@ -33,7 +33,7 @@ export default function Home() {
       <Work/>
       <SMM/>
       <About/>
-      {/* <Form/> */}
+      <Form/>
       {/* <Footer/> */}
       {/* <Lang/>  */}
     </>
