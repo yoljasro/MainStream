@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Lang } from '../Lang';
 import Image from 'next/image';
+import { LiaCalculatorSolid } from "react-icons/lia";
 
 export const About = () => {
     const t = useTranslations()
@@ -248,6 +249,16 @@ export const About = () => {
 
 
                     </div>
+                </div>
+            </div>
+
+            <div className={styles.about__calc}>
+                <div className={styles.about__calcCont}>
+                    <div className={styles.about__calcBtn}><LiaCalculatorSolid className={styles.about__icon} />
+                    <p className={styles.about__calcText}>Калькулятор услуг</p>
+                    </div>
+                    <div className={styles.about__line}></div>
+                    <p className={styles.about__desc}>Онлайн калькулятор поможет посчитать сколько стоят интересующие Вас услуги</p>
                 </div>
             </div>
         </div>
