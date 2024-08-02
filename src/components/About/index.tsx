@@ -13,14 +13,14 @@ export const About = () => {
     const path = router.asPath;
 
     return (
-        <div className={styles.about}>
+        <div className={styles.about} >
             <div className={styles.about__cards}>
                 <div className={styles.about__card}>Создаём</div>
                 <div className={styles.about__card}>Реализуем</div>
                 <div className={styles.about__card}>Продвигаем</div>
             </div>
 
-            <div className={styles.about__services}>
+            <div className={styles.about__services} id='services'>
                 <p className={styles.about__title}>Услуги</p>
                 <div className={styles.about__mediaContainer}>
                     <div className={styles.about__media}>

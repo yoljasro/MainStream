@@ -45,7 +45,7 @@ export const Navbar = () => {
         <li className={styles.navbar__bar}>
           <Link
             activeClass="active"
-            to="cases"
+            to="partners"
             spy={true}
             smooth={true}
             offset={-70}
@@ -58,14 +58,14 @@ export const Navbar = () => {
         <li className={styles.navbar__bar}>
           <Link 
             activeClass="active"
-            to="cases"
+            to="contact"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             className={styles.navbar__link}
           >
-            {t("menu.courses")} 
+            {t("menu.contact")} 
           </Link>
         </li>
       </ul>

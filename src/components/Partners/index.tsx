@@ -10,7 +10,7 @@ export const Partners = () => {
     const t = useTranslations()
 
     return (
-        <div className={styles.partners}>
+        <div className={styles.partners} id='partners'>
           <p className={styles.partners__title}>Нам доверяют</p>
           <div className={styles.partners__carousel}>
             <div className={styles.partners__slideone}></div>

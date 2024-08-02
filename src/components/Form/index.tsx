@@ -34,7 +34,7 @@ export const Form: React.FC = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='contact'>
       <div className={styles.content}>
         <div className={styles.info}>
           <p className={styles.info__title}>Остались вопросы?</p>
@@ -55,21 +55,19 @@ export const Form: React.FC = () => {
               },
               '& .MuiInputLabel-root': {
                 color: '#5B539D',
-                fontSize: "28px",
-                fontFamily: "Arial, Helvetica, sans-serif"
+                fontSize: '25px',
+                fontFamily: 'Arial, Helvetica, sans-serif',
+                textAlign: 'center', // Labelni markazlashtirish
+                width: '100%', // Labelning kengligini 100% qilib, markazlashtirilgan
               },
-              width: '100%',
-              maxWidth: '526px',
-              '.MuiInputBase-root': {
+              width: '700px', // TextFieldning kengligi
+              '& .MuiInputBase-root': {
                 borderLeft: 'none',
                 borderRight: 'none',
                 borderBottom: 'none',
-                outline: 'none',
                 color: '#FFFFFF !important',
                 paddingLeft: '85px',
                 fontSize: '24px !important',
-                borderColor: '#FFFFFF ',
-                outlineColor: '#FFFFFF',
               },
             }}
           />
@@ -89,21 +87,19 @@ export const Form: React.FC = () => {
               },
               '& .MuiInputLabel-root': {
                 color: '#5B539D',
-                fontSize: "28px",
-                fontFamily: "Arial, Helvetica, sans-serif"
+                fontSize: '25px',
+                fontFamily: 'Arial, Helvetica, sans-serif',
+                textAlign: 'center', // Labelni markazlashtirish
+                width: '100%', // Labelning kengligini 100% qilib, markazlashtirilgan
               },
-              width: '100%',
-              maxWidth: '526px',
-              '.MuiInputBase-root': {
+              width: '700px', // TextFieldning kengligi
+              '& .MuiInputBase-root': {
                 borderLeft: 'none',
                 borderRight: 'none',
                 borderBottom: 'none',
-                outline: 'none',
                 color: '#FFFFFF !important',
                 paddingLeft: '85px',
                 fontSize: '24px !important',
-                borderColor: '#FFFFFF ',
-                outlineColor: '#FFFFFF',
               },
             }}
           />
