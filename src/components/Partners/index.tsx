@@ -24,7 +24,7 @@ export const Partners = () => {
           <FaInstagram className={styles.partners__icon} />
           <p className={styles.partners__text}>Детальнее работы в ленте  instagram   нашего агенства </p>
           </div>
-          </div>
+          </div>  
         </div>
     )
 }
