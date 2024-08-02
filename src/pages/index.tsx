@@ -9,14 +9,24 @@ import { Footer } from "@/components/Footer";
 import { Form } from "@/components/Form";
 import { Video } from "@/components/Video";
 import { InNumbers } from "@/components/InNumbers";
-import {SMM} from "@/components/SMM"
+import { SMM } from "@/components/SMM"
 import { Service } from "@/components/Service";
 import { Partners } from "@/components/Partners";
 import { Work } from "@/components/Work";
 import { About } from "@/components/About";
+import { useInView } from 'react-intersection-observer';
+import { useState } from "react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [workInView, setWorkInView] = useState(false);
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+    onChange: (inView) => setWorkInView(inView),
+  });
+
   return (
     <>
       <Head>
@@ -25,20 +35,23 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/img/logo.jpg" />
       </Head>
-      <Navbar/>
-      <Video/>
-      <Service/>
-      <InNumbers/>
-      <Partners/>
-      <Work/>
-      <SMM/>
-      <About/>
-      <Form/>
-      <Footer/>
-      {/* <Lang/>  */}
+      <Navbar />
+      <Video />
+      <Service />
+      <InNumbers />
+      <Partners />
+      <div ref={ref}>
+        <Work inView={inView} />
+      </div>
+      <SMM inView={workInView} />
+      <About />
+      <Form />
+      <Footer />
+      {/* <Lang /> */}
     </>
   );
-}
+};
+
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {

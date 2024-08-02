@@ -1,16 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import styles from './index.module.sass';
-import { useRouter } from "next/router";
-import { useTranslations } from "next-intl";
-import Image from 'next/image';
+// components/SMM.tsx
 
-export const SMM = () => {
-    const t = useTranslations()
+import React from 'react';
+import styles from './index.module.sass';
+import { useTranslations } from 'next-intl';
+import { useSpring, animated } from 'react-spring';
+
+export const SMM = ({ inView }: { inView: boolean }) => {
+    const t = useTranslations();
+
+    const animation = useSpring({
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'translateY(0)' : 'translateY(100px)',
+    });
 
     return (
-        <div className={styles.container}>
-            <div className={styles.container__smm}>
-            </div>
-        </div>
-    )
-}
+        <animated.div style={animation} className={styles.container}>
+            <div className={styles.container__smm}></div>
+        </animated.div>
+    );
+};
