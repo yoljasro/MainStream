@@ -1,32 +1,24 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import styles from './index.module.sass';
 import { useTranslations } from 'next-intl';
-import { useSpring, animated } from 'react-spring';
-import Image from 'next/image';
+import { ParallaxLayer } from '@react-spring/parallax';
 
-export const SMM = ({ inView }: { inView: boolean }) => {
+export const SMM = () => {
     const t = useTranslations();
-    const videoRef = useRef<HTMLVideoElement>(null);
-
-    const animation = useSpring({
-        opacity: inView ? 1 : 0,
-        transform: inView ? 'translateY(0)' : 'translateY(100px)',
-    });
 
     return (
-        <animated.div style={animation} className={styles.container}>
+        <ParallaxLayer offset={1} speed={0.5} className={styles.container}>
             <div className={styles.container__smm}>
                 <div className={styles.container__phone}>
-                    <video 
-                        ref={videoRef}
+                    <video
                         autoPlay
                         loop
                         muted
-                        src="/assets/video/phonevideo.mp4" 
+                        src="/assets/video/phonevideo.mp4"
                         controls={false}
                     />
                 </div>
             </div>
-        </animated.div>
+        </ParallaxLayer>
     );
 };

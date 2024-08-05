@@ -1,19 +1,12 @@
-// components/Work.tsx
-
 import React from 'react';
 import styles from './index.module.sass';
 import { useTranslations } from 'next-intl';
-import { useInView } from 'react-intersection-observer';
 
-export const Work = ({ inView }: { inView: boolean }) => {
+export const Work = () => {
     const t = useTranslations();
-    const { ref } = useInView({
-        triggerOnce: true,
-        threshold: 0.1,
-    });
 
     return (
-        <div ref={ref} className={`${styles.work} ${inView ? styles.fadeOut : ''}`}>
+        <div className={styles.work}>
             <div className={styles.work__title}>{t("statistic.workStages.title")}</div>
             <div className={styles.work__section}>
                 <div className={styles.work__stage}>

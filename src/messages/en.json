@@ -77,19 +77,19 @@
             "chatbots": "Chat-bots (Instagram, Telegram)",
             "integration": "AI Integration",
             "calc": "Service Calculator",
-            "onlineCalc": "The online calculator will help calculate the cost of the services you are interested in",
-            "form": {
-                "question": "Any questions left?",
-                "contact": "Leave your contact information, our managers will contact you and provide advice",
-                "name": "Ruslan Mariarty",
-                "nameCompany": "Company Name",
-                "send": "Send"
-            },
-            "footer": {
-                "adress": "Uzbekistan, Tashkent, Chilanzar 3, 44/1",
-                "reserved": "All rights reserved by Mainstream Global",
-                "showOff": "Design by Ruslan Mariarty"
-            }
+            "onlineCalc": "The online calculator will help calculate the cost of the services you are interested in"
         }
+    },
+    "form": {
+        "question": "Any questions left?",
+        "contact": "Leave your contact information, our managers will contact you and provide advice",
+        "name": "Ruslan Mariarty",
+        "nameCompany": "Company Name",
+        "send": "Send"
+    },
+    "footer": {
+        "adress": "Uzbekistan, Tashkent, Chilanzar 3, 44/1",
+        "reserved": "All rights reserved by Mainstream Global",
+        "showOff": "Design by Ruslan Mariarty"
     }
 }
