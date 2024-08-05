@@ -13,7 +13,7 @@ export const Navbar = () => {
 
   return (
     <div className={styles.navbar}>
-      <Image src={'/assets/img/logoorg.png'} alt='logo' width={301} height={30}/>
+      <Image src={'/assets/img/logowhite.svg'} alt='logo' width={301} height={30}/>
       <div className={styles.navbar__section}>
       <ul className={styles.navbar__menu}>
         <li className={styles.navbar__bar}>
@@ -71,7 +71,7 @@ export const Navbar = () => {
       </ul>
 
       <Lang />
-      <div className={styles.navbar__course}>Курсы</div>
+      <div className={styles.navbar__course}>{t("menu.courses")}</div>
       </div>
     </div>
   )

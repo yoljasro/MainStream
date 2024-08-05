@@ -11,7 +11,7 @@
         "name": "Mainstream",
         "innumbers": "in numbers",
         "market": "YEARS IN THE MARKET",
-        "filial": "BRANCHES AROUND THE WORLD (UZB, UAE, TURKEY)",
+        "filial": "BRANCHES AROUND THE WORLD (UZB, UAE, TURKEY  , USA)",
         "projects": "SUCCESSFUL PROJECTS",
         "advertising": "ADVERTISING MATERIALS",
         "employees": "EMPLOYEES",
@@ -23,6 +23,7 @@
         "partnership": "The values of our company are long-term and fruitful partnership.",
         "instagram": "More details on the work in the Instagram feed of our agency",
         "workStages": {
+            "title" : "Stages of work",
             "audit": "Audit of your business",
             "budjet": "Determining the budget for promotion",
             "KPI": "Setting goals and KPI indicators",

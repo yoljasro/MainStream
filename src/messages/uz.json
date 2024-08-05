@@ -11,7 +11,7 @@
         "name": "Mainstream",
         "innumbers": "raqamlarda",
         "market": "Bozorda YILLAR",
-        "filial": "FILIALLAR DUNYODA (UZB, UAE, TURKIYA)",
+        "filial": "FILIALLAR DUNYODA (UZB, UAE, TURKIYA , USA)",
         "projects": "MUVAFFAQIYATLI LOYIHALAR",
         "advertising": "REKLAM MATNALAR",
         "employees": "XODIMLAR",
@@ -23,6 +23,7 @@
         "partnership": "Bizning kompaniyamizning qadriyatlariga uzun o'rtiqcha va foydali hamkorlikdir.",
         "instagram": "Bizning agentlik instagram sahifasidagi ishlar haqida batafsil ma'lumotlar",
         "workStages": {
+            "title": "Ish bosqichlari",
             "audit": "Sizning biznesingizni sinov qilish",
             "budjet": "Reklamga ajratiladigan byudjetni aniqlash",
             "KPI": "Maqsadlarni va KPI ko'rsatkichlarini aniqlash",
@@ -82,20 +83,20 @@
                 "contact": "Aloqani qoldiring, bizning menejerlar aloqa qilishadi va maslahat berishadi",
                 "name": "Ruslan Marirti",
                 "nameCompany": "Kompaniya nomi",
-                "send": "Yuborish" 
+                "send": "Yuborish"
             },
             "footer": {
                 "adress": "O'zbekiston, Toshkent sh., Chilonzor 3, 44/1",
                 "reserved": "Huquqlar himoyalangan Mainstream Global",
                 "showOff": "Ruslan Mariyarti tomonidan dizayn qilingan"
             },
-            "navbar" :{
-                "menuOne" : "Header",
-                "menuTwo" : "About us" , 
-                "menuThree" : "Contact",
-                "menuLast" : "Form" , 
-                "footerName" : "footer line " , 
-                "aboutNameKey" : "  "
+            "navbar": {
+                "menuOne": "Header",
+                "menuTwo": "About us",
+                "menuThree": "Contact",
+                "menuLast": "Form",
+                "footerName": "footer line ",
+                "aboutNameKey": "  "
             }
         }
     }

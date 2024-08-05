@@ -8,12 +8,53 @@
     &__smm
         width: 100%
         max-width: 1920px
-        height: 1200px
-        background-image: url("/assets/img/smm.png")
+        height: 1344px
+        background-image: url("/assets/img/smd.jpg")
         background-repeat: no-repeat
         object-fit: fill
         background-size: cover
-        
-
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        padding-left: 81px
         @media (max-width:769px)
             height: 700px
+
+    &__phone
+        width: 100%
+        max-width: 410px
+        height: 883px
+        background-repeat: no-repeat
+        margin-top: 210px
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        margin-left: -67px
+        video
+            width: 100%
+            // max-width: 405px
+            height: 100%
+            // margin-top: -20px
+            object-fit: contain
+            border-radius: 30px
+
+        .playButton
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            background-color: #766FB2
+            color: white
+            border: none
+            cursor: pointer
+            border-radius: 5px
+            width: 136.14px
+            height: 136.14px
+            border-radius: 100%
+            display: flex
+            justify-content: center
+            align-content: center
+            align-items: center
+            z-index: 10 // Ensures the button is above the video

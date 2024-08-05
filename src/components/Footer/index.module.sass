@@ -3,20 +3,21 @@
 
 .footer
     width: 100%
-    background: $mainColor
+    background: #766FB2
     color: $white
-    height: 517px
+    height: 300px
     margin-top: 100px
     display: flex
     padding-left: 95px
-    padding-right: 156px
+    // padding-right: 156px
     overflow: hidden
+    justify-content: space-between
 
     &__location
         display: flex
         color: #FFFFFF
         flex-direction: column
-        padding-top: 115px
+        padding-top: 80px
 
     &__number
         font-family: contrax
@@ -32,16 +33,14 @@
     &__adress
         font-size: 25px
         font-family: nova-regular
-        padding-top: 15px
+        // padding-top: 15px
         width: 100%
-        max-width: 267px
+        // max-width: 267px
 
     &__social
         width: 100%
         max-width: 1000px
-        height: 100vh
-        clip-path: polygon(50% 9%, 59% 0%, 120% 100%, -7% 100%)
-        background-image: url("/assets/img/footerimage.png")
+        // clip-path: polygon(50% 9%, 59% 0%, 120% 100%, -7% 100%)
         background-repeat: no-repeat
         background: #000000
         margin-top: -100px
@@ -51,12 +50,16 @@
         justify-content: center
         align-content: center
         align-items: center
-        padding-bottom: 100px
+        padding-right: 0
+        padding-top: 80px
+        // padding-bottom: 100px
         padding-left: 80px
+        clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0 100%)
+
         // background-image: url("/assets/img/footertr.pn")
 
     &__text
-        font-size: 18px
+        font-size: 16px
         font-family: nova-regular
         display: flex
         flex-direction: column
@@ -85,8 +88,15 @@
 
     &__icons
         display: flex
-        margin-top: 40px
+        margin-top: -10px
+        // margin-top: 40px
+        // display: none
         gap: 12px
 
         & img
             cursor: pointer
+
+
+    &__streamlogo
+        margin-left: 500px
+        margin-top: 50px

@@ -9,37 +9,26 @@ export const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.footer__location}>
-        <p className={styles.footer__number}>+998 90 981 23 56</p>
+        <p className={styles.footer__number}>+998 90 908 10 85</p>
         <p className={styles.footer__number}>+998 90 024 44 48</p>
         <p className={styles.footer__email}>mainstream.uz@gmail.com</p>
         <p className={styles.footer__adress}>Узбекистан, г. Ташкент,   Чиланзар 3, 44/1</p>
+        {/* <div className={styles.footer__icons}>
+          <div className={styles.footer__circle}></div>
+          <Image src={'/assets/img/youtube.png'} alt='youtube' width={35} height={35}/>
+          <Image src={'/assets/img/telegram.png'} alt='youtube' width={35} height={35}/>
+          <Image src={'/assets/img/whatsapp.png'} alt='youtube' width={35} height={35}/>
+          <Image src={'/assets/img/instagram.png'} alt='youtube' width={35} height={35}/>
+          <Image src={'/assets/img/facebook.png'} alt='youtube' width={35} height={35}/>
+
+        </div>  */}
       </div>
 
       <div className={styles.footer__social}>
-        <Image src={'/assets/img/screen.jpg'} alt='screen' width={260} height={144}/>
+        <Image className={styles.footer__streamlogo} src={'/assets/img/bigmainlogo.svg'} alt='screen' width={260} height={144}/>
         <div className={styles.footer__text}>
-        <p>Права защищены Mainstream Global </p>
-        <p>Design by Ruslan Mariarty</p>
-        <p>Programmer: jasurbek_programmer</p>
         </div>
-        <div className={styles.footer__icons}>
-          <Image src={'/assets/img/youtube.png'} alt='youtube' width={49} height={49}/>
-          <Image src={'/assets/img/telegram.png'} alt='youtube' width={49} height={49}/>
-          <Image src={'/assets/img/whatsapp.png'} alt='youtube' width={49} height={49}/>
-          <Image src={'/assets/img/instagram.png'} alt='youtube' width={49} height={49}/>
-          <Image src={'/assets/img/facebook.png'} alt='youtube' width={49} height={49}/>
-
-        </div> 
-      </div>
-
-      <div className={styles.footer__menu}>
-        <ul>
-          <li>О компании</li>
-          <li>Услуги</li>
-          <li>Кейсы</li>
-          <li>Контакты</li>
-          <li>Курсы</li>
-        </ul>
+        
       </div>
     </div>
   )

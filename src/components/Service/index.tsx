@@ -13,10 +13,10 @@ export const Service = () => {
   return (
     <div className={styles.service}>
       <div className={styles.service__cont}>
-        <p className={styles.service__text}>Mainstream -  быстро развивающееся агентство полного цикла, где каждая деталь проработала до совершенства,  для достижения высоких результатов наших клиентов. </p>
+        <p className={styles.service__text}>{t("statistic.info")} </p>
       </div>
       <div className={styles.service__img}>
-        {/* <Image src={'/assets/img/logomain.jpg'} alt='image' width={250} height={200} /> */}
+        <Image src={'/assets/img/bigmainlogo.svg'} alt='image' width={260} height={144} />
       </div>
     </div>
   )

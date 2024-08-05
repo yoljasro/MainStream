@@ -11,18 +11,18 @@ export const Partners = () => {
 
     return (
         <div className={styles.partners} id='partners'>
-          <p className={styles.partners__title}>Нам доверяют</p>
+          <p className={styles.partners__title}>{t("statistic.trust")}</p>
           <div className={styles.partners__carousel}>
             <div className={styles.partners__slideone}></div>
             <div className={styles.partners__slidetwo}></div>
           </div>
-          <p className={styles.partners__desc}>Ценности нашей компании это долгосрочное и плодотворное партнёрство.</p>
+          <p className={styles.partners__desc}>{t("statistic.partnership")}</p>
           <div className={styles.partners__section}>
-          <Image src={'/assets/img/logoorg.png'} alt='logo' width={301} height={27}/>
+          <Image src={'/assets/img/logoorg.svg'} alt='logo' width={301} height={27}/>
           <div className={styles.partners__line}></div>
           <div className={styles.partners__insta}>
           <FaInstagram className={styles.partners__icon} />
-          <p className={styles.partners__text}>Детальнее работы в ленте  instagram   нашего агенства </p>
+          <p className={styles.partners__text}>{t("statistic.instagram")} </p>
           </div>
           </div>  
         </div>

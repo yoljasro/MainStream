@@ -15,50 +15,50 @@ export const About = () => {
     return (
         <div className={styles.about} >
             <div className={styles.about__cards}>
-                <div className={styles.about__card}>Создаём</div>
-                <div className={styles.about__card}>Реализуем</div>
-                <div className={styles.about__card}>Продвигаем</div>
+                <div className={styles.about__card}>{t("statistic.workcycle.create")}</div>
+                <div className={styles.about__card}>{t("statistic.workcycle.realling")}</div>
+                <div className={styles.about__card}>{t("statistic.workcycle.promotion")}</div>
             </div>
 
             <div className={styles.about__services} id='services'>
-                <p className={styles.about__title}>Услуги</p>
+                <p className={styles.about__title}>{t("statistic.services.title")}</p>
                 <div className={styles.about__mediaContainer}>
                     <div className={styles.about__media}>
-                        <div className={styles.about__name}>Дизайн</div>
+                        <div className={styles.about__name}>{t("statistic.services.design")}</div>
                         <div className={styles.about__info}>
                             <div className={styles.about__list}>
                                 <ul className={styles.about__menu}>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Посты для социальных сетей</li>
+                                        <li>{t("statistic.services.posts")}</li>
                                     </div>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Motion ролики</li>
+                                        <li>{t("statistic.services.motion")}</li>
                                     </div>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Брендинг</li>
-                                    </div>
-
-                                    <div className={styles.about__listCont}>
-                                        <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Дизайн наружной рекламы</li>
+                                        <li>{t("statistic.services.branding")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>3D моделирование</li>
+                                        <li>{t("statistic.services.advertising")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>VFX - ролики</li>
+                                        <li>{t("statistic.services.modeling")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Дизайн печатной продукции</li>
+                                        <li>{t("statistic.services.vfx")}</li>
+                                    </div>
+
+                                    <div className={styles.about__listCont}>
+                                        <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
+                                        <li>{t("statistic.services.printProduct")}</li>
                                     </div>
                                 </ul>
                             </div>
@@ -72,84 +72,81 @@ export const About = () => {
                                 <ul className={styles.about__menu}>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Посты для социальных сетей</li>
+                                        <li>{t("statistic.services.strategy")}</li>
                                     </div>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Motion ролики</li>
+                                        <li>{t("statistic.services.target")}</li>
                                     </div>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Брендинг</li>
-                                    </div>
-
-                                    <div className={styles.about__listCont}>
-                                        <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Дизайн наружной рекламы</li>
+                                        <li>{t("statistic.services.smm")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>3D моделирование</li>
+                                        <li>{t("statistic.services.copywriting")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>VFX - ролики</li>
+                                        <li>{t("statistic.services.analytic")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Дизайн печатной продукции</li>
+                                        <li>{t("statistic.services.brand")}</li>
+                                    </div>
+
+                                    <div className={styles.about__listCont}>
+                                        <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
+                                        <li>{t("statistic.services.influence")}</li>
                                     </div>
                                 </ul>
                             </div>
-                            <div className={styles.about__img}></div>
+                            <div className={styles.about__imgmarketing}></div>
                         </div>
-                        <div className={styles.about__name}>Маркетинг</div>
-
-
-
+                        <div className={styles.about__name}>{t("statistic.services.marketing")}</div>
 
                     </div>
 
                     <div className={styles.about__media}>
-                        <div className={styles.about__nametwo} >Видео-продакшн</div>
+                        <div className={styles.about__nametwo} >{t("statistic.services.video")}</div>
 
                         <div className={styles.about__info}>
                             <div className={styles.about__list}>
                                 <ul className={styles.about__menu}>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Посты для социальных сетей</li>
+                                        <li>{t("statistic.services.shooting")}</li>
                                     </div>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Motion ролики</li>
+                                        <li>{t("statistic.services.photo")}</li>
                                     </div>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Брендинг</li>
-                                    </div>
-
-                                    <div className={styles.about__listCont}>
-                                        <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Дизайн наружной рекламы</li>
+                                        <li>{t("statistic.services.reels")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>3D моделирование</li>
+                                        <li>{t("statistic.services.commercials")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>VFX - ролики</li>
+                                        <li>{t("statistic.services.storymaking")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Дизайн печатной продукции</li>
+                                        <li>{t("statistic.services.dron")}</li>
+                                    </div>
+
+                                    <div className={styles.about__listCont}>
+                                        <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
+                                        <li>{t("statistic.services.editing")}</li>
                                     </div>
                                 </ul>
                             </div>
@@ -166,11 +163,11 @@ export const About = () => {
                                 <ul className={styles.about__menu}>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Посты для социальных сетей</li>
+                                        <li>{t("statistic.services.landing")}</li>
                                     </div>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Motion ролики</li>
+                                        <li>{t("statistic.services.corporate")}</li>
                                     </div>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
@@ -179,69 +176,69 @@ export const About = () => {
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Дизайн наружной рекламы</li>
+                                        <li>{t("statistic.services.seo")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>3D моделирование</li>
+                                        <li>{t("statistic.services.banner")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>VFX - ролики</li>
+                                        <li>{t("statistic.services.app")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Дизайн печатной продукции</li>
+                                        <li>{t("statistic.services.search")}</li>
                                     </div>
                                 </ul>
                             </div>
                             <div className={styles.about__imgit}></div>
                         </div>
-                        <div className={styles.about__nameit}>IT-разработки</div>
+                        <div className={styles.about__nameit}>{t("statistic.services.IT")}</div>
 
                     </div>
 
                     <div className={styles.about__media}>
-                        <div className={styles.about__namelast} ></div>
+                        <div className={styles.about__namelast} >{t("statistic.services.bot")}</div>
 
                         <div className={styles.about__info}>
                             <div className={styles.about__list}>
                                 <ul className={styles.about__menu}>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Посты для социальных сетей</li>
+                                        <li>{t("statistic.services.development")}</li>
                                     </div>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Motion ролики</li>
+                                        <li>{t("statistic.services.appConect")}</li>
                                     </div>
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Брендинг</li>
+                                        <li>{t("statistic.services.traffic")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>Дизайн наружной рекламы</li>
+                                        <li>{t("statistic.services.technicial")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>3D моделирование</li>
+                                        <li>{t("statistic.services.chatbots")}</li>
                                     </div>
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>VFX - ролики</li>
+                                        <li>{t("statistic.services.integration")}</li>
                                     </div>
-
+{/* 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
                                         <li>Дизайн печатной продукции</li>
-                                    </div>
+                                    </div> */}
                                 </ul>
                             </div>
                             <div className={styles.about__imglast}></div>

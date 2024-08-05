@@ -10,7 +10,7 @@ export const InNumbers = () => {
     return (
         <div className={styles.numbers}>
             <p className={styles.numbers__title}>Mainstream</p>
-            <p className={styles.numbers__numb}> в цифрах</p>
+            <p className={styles.numbers__numb}> {t("statistic.innumbers")}</p>
 
             <div className={styles.numbers__cards}>
                 <div className={styles.numbers__cardone}>
@@ -18,7 +18,7 @@ export const InNumbers = () => {
                     <p className={styles.numbers__desc}>{t("statistic.market")}</p>
                 </div>
                 <div className={styles.numbers__cardone}>
-                    <p className={styles.numbers__numbersecond}>3</p>
+                    <p className={styles.numbers__numbersecond}>4</p>
                     <p className={styles.numbers__descsecond}>{t("statistic.filial")}</p>
                 </div>
                 <div className={styles.numbers__cardone}>
@@ -39,7 +39,7 @@ export const InNumbers = () => {
                 </div>
                 <div className={styles.numbers__cardthird}>
                     <p className={styles.numbers__numbertwo}>1,126 <span className={styles.numbers__span}>МЛРД</span>  </p>
-                    <p className={styles.numbers__desctwo}>{t("statistic.videos")}</p>
+                    <p className={styles.numbers__desctwo}>ПРОСМОТРОВ НА НАШИХ <br /> ВИДЕОРОЛИКАХ</p>
                 </div>
                 <div className={styles.numbers__cardfourt}>
                     <p className={styles.numbers__numbertwo}>3,49 <span className={styles.numbers__span}>МЛН</span>  </p>
