@@ -232,7 +232,7 @@ export const About = () => {
 
                                     <div className={styles.about__listCont}>
                                         <Image src={'/assets/img/triangle.png'} alt='tirangle' width={13.21} height={11.44} />
-                                        <li>{t("statistic.services.integration")}</li>
+                                        <li>{t("statistic.services.calc")}</li>
                                     </div>
 {/* 
                                     <div className={styles.about__listCont}>
@@ -252,10 +252,10 @@ export const About = () => {
             <div className={styles.about__calc}>
                 <div className={styles.about__calcCont}>
                     <div className={styles.about__calcBtn}><LiaCalculatorSolid className={styles.about__icon} />
-                    <p className={styles.about__calcText}>Калькулятор услуг</p>
+                    <p className={styles.about__calcText}>{t("statistic.services.integration")}</p>
                     </div>
                     <div className={styles.about__line}></div>
-                    <p className={styles.about__desc}>Онлайн калькулятор поможет посчитать сколько стоят интересующие Вас услуги</p>
+                    <p className={styles.about__desc}>{t("statistic.services.onlineCalc")}</p>
                 </div>
             </div>
         </div>

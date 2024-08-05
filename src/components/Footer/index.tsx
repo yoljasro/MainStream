@@ -12,7 +12,7 @@ export const Footer = () => {
         <p className={styles.footer__number}>+998 90 908 10 85</p>
         <p className={styles.footer__number}>+998 90 024 44 48</p>
         <p className={styles.footer__email}>mainstream.uz@gmail.com</p>
-        <p className={styles.footer__adress}>Узбекистан, г. Ташкент,   Чиланзар 3, 44/1</p>
+        <p className={styles.footer__adress}>{t("footer.adress")}</p>
         {/* <div className={styles.footer__icons}>
           <div className={styles.footer__circle}></div>
           <Image src={'/assets/img/youtube.png'} alt='youtube' width={35} height={35}/>

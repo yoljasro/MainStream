@@ -78,18 +78,8 @@
             "integration": "AI integratsiya",
             "calc": "Xizmatlar kalkulyatori",
             "onlineCalc": "Onlayn kalkulyator sizning qiziqarli xizmatlaringiz narxini hisoblashga yordam beradi",
-            "form": {
-                "question": "Savollaringiz qoldimi?",
-                "contact": "Aloqani qoldiring, bizning menejerlar aloqa qilishadi va maslahat berishadi",
-                "name": "Ruslan Marirti",
-                "nameCompany": "Kompaniya nomi",
-                "send": "Yuborish"
-            },
-            "footer": {
-                "adress": "O'zbekiston, Toshkent sh., Chilonzor 3, 44/1",
-                "reserved": "Huquqlar himoyalangan Mainstream Global",
-                "showOff": "Ruslan Mariyarti tomonidan dizayn qilingan"
-            },
+          
+          
             "navbar": {
                 "menuOne": "Header",
                 "menuTwo": "About us",
@@ -99,5 +89,18 @@
                 "aboutNameKey": "  "
             }
         }
+    },
+    "form": {
+        "question": "Savollaringiz qoldimi?",
+        "contact": "Aloqani qoldiring, bizning menejerlar aloqa qilishadi va maslahat berishadi",
+        "name": "Ruslan Mariatry",
+        "nameCompany": "Kompaniya nomi",
+        "send": "Yuborish"
+    },
+    "footer": {
+        "adress": "O'zbekiston, Toshkent sh., Chilonzor 3, 44/1",
+        "reserved": "Huquqlar himoyalangan Mainstream Global",
+        "showOff": "Ruslan Mariyarti tomonidan dizayn qilingan"
     }
+    
 }

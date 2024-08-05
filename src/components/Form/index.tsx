@@ -5,6 +5,7 @@ import styles from './index.module.sass';
 import Image from 'next/image';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { useTranslations } from "next-intl";
 
 interface FormData {
   name: string;
@@ -13,6 +14,7 @@ interface FormData {
 }
 
 export const Form: React.FC = () => {
+  const t = useTranslations()
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -37,8 +39,8 @@ export const Form: React.FC = () => {
     <div className={styles.container} id='contact'>
       <div className={styles.content}>
         <div className={styles.info}>
-          <p className={styles.info__title}>Остались вопросы?</p>
-          <p className={styles.info__description}>Оставьте контактные данные, наши менеджеры свяжутся с Вами и проконсультируют</p>
+          <p className={styles.info__title}>{t("form.question")}</p>
+          <p className={styles.info__description}>{t("form.contact")}</p>
           <Image className={styles.info__logo} src={'/assets/img/logoorg.svg'} alt='logoorg' width={356} height={32} />
         </div>
         <form className={styles.form} onSubmit={handleSubmit}>
@@ -46,7 +48,7 @@ export const Form: React.FC = () => {
             name='name'
             className={styles.form__input}
             onChange={handleChange}
-            placeholder='Руслан Мариарти'
+            placeholder={t("form.name")}
             value={formData.name}
             // id="standard-basic" label="Руслан Мариарти"
             variant="standard"
@@ -117,7 +119,7 @@ export const Form: React.FC = () => {
             type="tel"
             name="phone"
             value={formData.phone}
-            placeholder='Название компании'
+            placeholder={t("form.nameCompany")}
             onChange={handleChange}
             className={styles.form__input}
             id="standard-basic"
@@ -149,7 +151,7 @@ export const Form: React.FC = () => {
               },
             }}
           />
-          <Button variant='contained' type="submit" className={styles.form__submit}>Отправить</Button>
+          <Button variant='contained' type="submit" className={styles.form__submit}>{t("form.send")}</Button>
         </form>
       </div>
     </div>
