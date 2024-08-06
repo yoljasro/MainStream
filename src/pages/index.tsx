@@ -16,7 +16,6 @@ import { Work } from "@/components/Work";
 import { About } from "@/components/About";
 import { useInView } from 'react-intersection-observer';
 import { useState } from "react";
-import { Parallax } from '@react-spring/parallax';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,9 +41,7 @@ export default function Home() {
       <InNumbers />
       <Partners />
       <Work />
-      <Parallax pages={2  }>
         <SMM />
-      </Parallax>
       <About />
       <Form />
       <Footer />
