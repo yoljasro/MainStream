@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Lang } from '../Lang';
 import Image from 'next/image';
+import { Zoom, Fade } from "react-reveal";
 
 export const Navbar = () => {
   const t = useTranslations()
@@ -13,7 +14,10 @@ export const Navbar = () => {
 
   return (
     <div className={styles.navbar}>
+         <Fade left cascade>
       <Image src={'/assets/img/logowhite.svg'} alt='logo' width={301} height={30}/>
+      </Fade>
+      <Fade right cascade>
       <div className={styles.navbar__section}>
       <ul className={styles.navbar__menu}>
         <li className={styles.navbar__bar}>
@@ -73,6 +77,7 @@ export const Navbar = () => {
       <Lang />
       <div className={styles.navbar__course}>{t("menu.courses")}</div>
       </div>
+      </Fade>
     </div>
   )
 }

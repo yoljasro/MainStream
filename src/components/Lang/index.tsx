@@ -1,7 +1,9 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './index.module.sass';
 import { useRouter } from "next/router";
 import { useTranslations } from "next-intl";
+import { Zoom, Fade } from "react-reveal";
+
 
 export const Lang = () => {
     const [selectedLanguage, setSelectedLanguage] = useState('ru');
@@ -29,19 +31,23 @@ export const Lang = () => {
                     locale: nextLanguage,
                 });
             }, 300);
-        }, 300); 
+        }, 300);
     };
 
     return (
-        <div className={styles.lang}>
-            <div className={styles.lang__select} onClick={handleClick}>
-                <span className={styles.lang__selected}>{selectedLanguage.toUpperCase()}</span>
-                <span className={`${styles.lang__options} ${animateOut ? styles.animateOut : ''}`}>
-                    <span>RU</span>
-                    <span>UZ</span>
-                    <span>EN</span>
-                </span>
+        <Fade right cascade>
+
+            <div className={styles.lang}>
+                <div className={styles.lang__select} onClick={handleClick}>
+                    <span className={styles.lang__selected}>{selectedLanguage.toUpperCase()}</span>
+                    <span className={`${styles.lang__options} ${animateOut ? styles.animateOut : ''}`}>
+                        <span>RU</span>
+                        <span>UZ</span>
+                        <span>EN</span>
+                    </span>
+                </div>
             </div>
-        </div>
+        </Fade>
+
     );
 };
