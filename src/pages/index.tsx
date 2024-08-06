@@ -15,12 +15,13 @@ import { Partners } from "@/components/Partners";
 import { Work } from "@/components/Work";
 import { About } from "@/components/About";
 import { useInView } from 'react-intersection-observer';
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [workInView, setWorkInView] = useState(false);
+  const smmRef = useRef(null);
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -41,7 +42,10 @@ export default function Home() {
       <InNumbers />
       <Partners />
       <Work />
-        <SMM />
+
+       <div ref={smmRef}>
+                <SMM />
+            </div>
       <About />
       <Form />
       <Footer />
