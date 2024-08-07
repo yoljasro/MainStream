@@ -8,7 +8,7 @@
   background: #0A0A0A
 
   @media (max-width: 769px)
-    height: auto
+    // height: auto
 
   &__title
     font-size: 53px
@@ -42,10 +42,14 @@
   &__slideone
     background-image: url('/assets/img/clients1.png'), url('/assets/img/clients1.png')
     animation: slideoneAnimation 13s linear infinite
+    @media (max-width:769px)
+        animation-duration: 22s
 
   &__slidetwo
     background-image: url('/assets/img/clients2.png'), url('/assets/img/clients2.png')
     animation: slidetwoAnimation 13s linear infinite
+    @media (max-width:769px)
+        animation-duration: 22s
 
   @keyframes slideoneAnimation
     0%
@@ -68,7 +72,7 @@
 
     @media (max-width: 769px)
       font-size: 30px
-      padding-top: 20px
+      padding-top: 30px
 
   &__section
     display: flex
@@ -78,7 +82,10 @@
 
     @media (max-width: 769px)
       flex-direction: column
-      gap: 20px
+      gap: 25px
+      justify-content: center
+      align-content: center
+      align-items: center
 
   &__line
     width: 3.39px
@@ -99,6 +106,9 @@
     margin-left: 22px
     display: flex
     gap: 17px
+    @media (max-width:769px)
+        width: 90%
+        margin-left: 0
 
   &__icon
     font-size: 70px
