@@ -18,7 +18,9 @@ export const Navbar = () => {
     <div className={`${styles.navbar} ${menuOpen ? styles.navbar_open : ''}`}>
       <div className={styles.navbar__header}>
         <Fade left cascade>
+          <a href="/">
           <Image className={styles.navbar__logo} src={'/assets/img/logowhite.svg'} alt='logo' width={301} height={30} />
+          </a>
         </Fade>
         <button className={styles.navbar__toggle} onClick={toggleMenu}>
           {menuOpen ? '✕' : '☰'}
