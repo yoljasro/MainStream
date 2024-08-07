@@ -5,6 +5,8 @@
     position: relative
     width: 100%
     z-index: 1
+    @media (max-width:769px)
+        // height: 1400px
 
     &__title
         width: 100%
@@ -21,6 +23,9 @@
         display: flex
         justify-content: center
         align-items: center
+        @media (max-width: 769px)
+            font-size: 50px
+            width: 95%
 
     &__stage
         width: 100%
@@ -32,17 +37,27 @@
         flex-direction: column
         gap: 37px
         position: relative
+        @media (max-width: 769px)
+            background-image: none
+            // width: 80%
 
     &__info
         display: flex
         gap: 44px
         padding-left: 405px
+        @media (max-width: 769px)
+            padding-left: 10px
+            height: 100px
+            background: #766FB2
 
     &__number
         color: #FFFFFF
         font-size: 70px
         font-family: contrax
         padding-top: 6px
+        @media (max-width:769px)
+            font-size: 60px
+            padding-left: 20px
 
     &__numberone
         color: #FFFFFF
@@ -50,6 +65,9 @@
         font-family: contrax
         padding-top: 6px
         padding-left: 10px
+        @media (max-width:769px)
+            font-size: 60px
+            padding-left: 20px
 
     &__desc
         color: #FFFFFF
@@ -58,6 +76,9 @@
         padding-top: 26px
         width: 100%
         max-width: 665px
+        @media (max-width:769px)
+            font-size: 25px
+            // padding-top: 26px
 
     &__descone
         color: #FFFFFF
@@ -67,11 +88,17 @@
         padding-left: 25px
         width: 100%
         max-width: 665px
+        @media (max-width:769px)
+            font-size: 25px
+            // padding-top: 5px
 
     &__numberlast
         color: #FFFFFF
         font-size: 70px
         font-family: contrax
+        @media (max-width:769px)
+            font-size: 60px
+            padding-left: 20px
 
     &__desclast
         color: #FFFFFF
@@ -80,6 +107,8 @@
         width: 100%
         max-width: 665px
         padding-top: 15px
+        @media (max-width:769px)
+            font-size: 25px
 
     &__desctwo
         color: #FFFFFF
@@ -87,6 +116,8 @@
         font-size: 30px
         width: 100%
         max-width: 665px
+        @media (max-width:769px)
+            font-size: 21px
 
     &__subtitle
         color: #000000
@@ -96,6 +127,12 @@
         width: 100%
         font-size: 32px
         max-width: 1177px
+        @media (max-width: 769px)
+            padding-top: 50px
+            font-size: 22px
+            text-align: center
+            padding-right: 5px
+            padding-left: 5px
 
     &__sectionContainer
         display: flex
