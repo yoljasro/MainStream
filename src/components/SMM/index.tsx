@@ -6,6 +6,7 @@ export const SMM = () => {
     const t = useTranslations();
 
     return (
+        <div className={styles.container}>
             <div className={styles.container__smm}>
                 <div className={styles.container__phone}>
                     <video
@@ -17,5 +18,6 @@ export const SMM = () => {
                     />
                 </div>
             </div>
+        </div>
     );
 };
