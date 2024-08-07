@@ -22,7 +22,6 @@
   font-family: nova-light
   src: url(/assets/fonts/proximanova_light.otf)
 
-
 @font-face
   font-family: nova-regular
   src: url(/assets/fonts/proximanova_regular.ttf)
@@ -30,7 +29,6 @@
 @font-face
   font-family: contrax
   src: url(/assets/fonts/conthrax-sb.ttf)
-
 
 a
   color: inherit
@@ -44,5 +42,7 @@ button:focus-visible
   padding: 0
   box-sizing: border-box
 
-body
+body,html
   overflow-x: hidden
+  @media (max-width:769px)
+    overflow-x: hidden
