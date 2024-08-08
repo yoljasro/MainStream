@@ -44,7 +44,7 @@ export default function Home() {
       <Work />
 
        <div ref={smmRef}>
-                <SMM />
+                {/* <SMM /> */}
             </div>
       <About />
       <Form />

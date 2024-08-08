@@ -6,6 +6,7 @@ import Image from 'next/image';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useTranslations } from "next-intl";
+import { useMediaQuery, useTheme } from '@mui/material';
 
 interface FormData {
   name: string;
@@ -14,7 +15,7 @@ interface FormData {
 }
 
 export const Form: React.FC = () => {
-  const t = useTranslations()
+  const t = useTranslations();
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -35,6 +36,9 @@ export const Form: React.FC = () => {
     console.log('Form submitted with data:', formData);
   };
 
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <div className={styles.container} id='contact'>
       <div className={styles.content}>
@@ -50,7 +54,6 @@ export const Form: React.FC = () => {
             onChange={handleChange}
             placeholder={t("form.name")}
             value={formData.name}
-            // id="standard-basic" label="Руслан Мариарти"
             variant="standard"
             sx={{
               '& .MuiInput-underline:before': {
@@ -72,10 +75,10 @@ export const Form: React.FC = () => {
                 borderRight: 'none',
                 borderBottom: 'none',
                 color: '#FFFFFF !important',
-                paddingLeft: '200px', // Adjust padding as needed
+                paddingLeft: isSmallScreen ? '30px' : '200px', // Adjust padding based on screen size
                 fontSize: '24px !important',
                 textAlign: 'center', // Center text including placeholder
-              },
+              } 
             }}
           />
 
@@ -85,9 +88,7 @@ export const Form: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             className={styles.form__input}
-            id="standard-basic"
             placeholder='+998 (90) 024 44 48'
-            // label="+998 (90) 024 44 48"
             variant="standard"
             sx={{
               '& .MuiInput-underline:before': {
@@ -109,7 +110,7 @@ export const Form: React.FC = () => {
                 borderRight: 'none',
                 borderBottom: 'none',
                 color: '#FFFFFF !important',
-                paddingLeft: '200px', // Adjust padding as needed
+                paddingLeft: isSmallScreen ? '30px' : '200px', // Adjust padding based on screen size
                 fontSize: '24px !important',
                 textAlign: 'center', // Center text including placeholder
               },
@@ -122,8 +123,6 @@ export const Form: React.FC = () => {
             placeholder={t("form.nameCompany")}
             onChange={handleChange}
             className={styles.form__input}
-            id="standard-basic"
-            // label="Название компании"
             variant="standard"
             sx={{
               '& .MuiInput-underline:before': {
@@ -145,7 +144,7 @@ export const Form: React.FC = () => {
                 borderRight: 'none',
                 borderBottom: 'none',
                 color: '#FFFFFF !important',
-                paddingLeft: '200px', // Adjust padding as needed
+                paddingLeft: isSmallScreen ? '30px' : '200px', // Adjust padding based on screen size
                 fontSize: '24px !important',
                 textAlign: 'center', // Center text including placeholder
               },
@@ -157,4 +156,3 @@ export const Form: React.FC = () => {
     </div>
   );
 };
-
