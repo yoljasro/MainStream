@@ -112,7 +112,6 @@ export const About = () => {
 
                     <div className={styles.about__media}>
                         <div className={styles.about__nametwo} >{t("statistic.services.video")}</div>
-
                         <div className={styles.about__info}>
                             <div className={styles.about__list}>
                                 <ul className={styles.about__menu}>
