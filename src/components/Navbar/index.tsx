@@ -15,11 +15,11 @@ export const Navbar = () => {
   };
 
   return (
-    <div className={`${styles.navbar} ${menuOpen ? styles.navbar_open : ''}`}>
+    <div className={`${styles.navbar} ${menuOpen ? styles.navbar_open : ''}`} style={{ height: menuOpen ? '100vh' : '131px' }}>
       <div className={styles.navbar__header}>
         <Fade left cascade>
           <a href="/">
-          <Image className={styles.navbar__logo} src={'/assets/img/logowhite.svg'} alt='logo' width={301} height={30} />
+            <Image className={styles.navbar__logo} src={'/assets/img/logowhite.svg'} alt='logo' width={301} height={30} />
           </a>
         </Fade>
         <button className={styles.navbar__toggle} onClick={toggleMenu}>
@@ -38,6 +38,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 className={styles.navbar__link}
+                onClick={toggleMenu} // Close menu on link click
               >
                 {t("menu.company")}
               </Link>
@@ -51,6 +52,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 className={styles.navbar__link}
+                onClick={toggleMenu} // Close menu on link click
               >
                 {t("menu.services")}
               </Link>
@@ -64,6 +66,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 className={styles.navbar__link}
+                onClick={toggleMenu} // Close menu on link click
               >
                 {t("menu.cases")}
               </Link>
@@ -77,6 +80,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 className={styles.navbar__link}
+                onClick={toggleMenu} // Close menu on link click
               >
                 {t("menu.contact")}
               </Link>
