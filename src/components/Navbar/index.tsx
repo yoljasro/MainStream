@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // useEffect hook qo'shildi
 import styles from './index.module.sass';
 import { useTranslations } from "next-intl";
 import { Link } from "react-scroll";
@@ -14,8 +14,23 @@ export const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Ekran o'lchami o'zgarsa, menyuni yopish
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 769 && menuOpen) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [menuOpen]);
+
   return (
-    <div className={`${styles.navbar} ${menuOpen ? styles.navbar_open : ''}`} style={{ height: menuOpen ? '100vh' : '131px' }}>
+    <div className={`${styles.navbar} ${menuOpen ? styles.navbar_open : ''}`} style={{ height: menuOpen && window.innerWidth <= 769 ? '100vh' : '131px' }}>
       <div className={styles.navbar__header}> 
         <Fade left cascade>
           <a href="/">

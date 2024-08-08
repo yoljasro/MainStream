@@ -29,8 +29,11 @@
             padding-left: 40px
 
         @media (max-width: 769px)
-            height: 700px
+            height: 1000px
             padding-left: 20px
+            background-position: top
+            background-size: cover
+
 
     &__phone
         width: 100%
@@ -61,4 +64,7 @@
             object-fit: contain
             border-radius: 30px
             @media (max-width:769px)
-                object-fit: contain
+                object-fit: fill
+                width: 100%
+                height: 100%
+                // display: none

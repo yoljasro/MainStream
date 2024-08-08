@@ -42,10 +42,7 @@ export default function Home() {
       <InNumbers />
       <Partners />
       <Work />
-
-       <div ref={smmRef}>
-                {/* <SMM /> */}
-            </div>
+      <SMM />
       <About />
       <Form />
       <Footer />
