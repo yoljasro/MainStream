@@ -16,7 +16,7 @@ export const Navbar = () => {
 
   return (
     <div className={`${styles.navbar} ${menuOpen ? styles.navbar_open : ''}`} style={{ height: menuOpen ? '100vh' : '131px' }}>
-      <div className={styles.navbar__header}>
+      <div className={styles.navbar__header}> 
         <Fade left cascade>
           <a href="/">
             <Image className={styles.navbar__logo} src={'/assets/img/logowhite.svg'} alt='logo' width={301} height={30} />

@@ -14,7 +14,6 @@
         padding-right: 20px
         flex-direction: column
         align-items: flex-start
-        height: 100% // Default to full height
 
     &__header
         // display: flex
@@ -51,9 +50,13 @@
             flex-direction: column
             gap: 20px
             width: 100%
-            align-items: flex-start
+            justify-content: center
+            align-content: center
+            align-items: center
+            padding-bottom: 280px
             &.navbar__section_open
                 display: flex
+                margin-top: -300px
 
     &__menu
         display: flex
@@ -64,8 +67,12 @@
         font-family: nova-regular !important
         @media (max-width: 769px)
             flex-direction: column
-            gap: 10px
+            justify-content: center
+            align-content: center
+            align-items: center
+            gap: 20px
             width: 100%
+            font-size: 26px
 
     &__course
         width: 290px
@@ -83,4 +90,8 @@
         align-items: center
         font-family: nova-regular
         @media (max-width: 769px)
-            margin-top: 10px // Adjust margin as needed
+            margin-top: 0px // Adjust margin as needed
+            width: 95%
+            border-radius: 100px
+            position: relative
+            top: 100px
