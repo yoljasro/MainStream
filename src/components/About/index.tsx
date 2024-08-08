@@ -6,6 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { Lang } from '../Lang';
 import Image from 'next/image';
 import { LiaCalculatorSolid } from "react-icons/lia";
+import { Fade , Zoom , Flip } from "react-reveal";
 
 export const About = () => {
     const t = useTranslations()
@@ -13,7 +14,7 @@ export const About = () => {
     const path = router.asPath;
 
     return (
-        <div className={styles.about} >
+        <div className={styles.about}   >
             <div className={styles.about__cards}>
                 <div className={styles.about__card}>{t("statistic.workcycle.create")}</div>
                 <div className={styles.about__card}>{t("statistic.workcycle.realling")}</div>
