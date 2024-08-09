@@ -6,7 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { Lang } from '../Lang';
 import Image from 'next/image';
 import { LiaCalculatorSolid } from "react-icons/lia";
-import { Fade, Zoom, Flip } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 
 export const About = () => {
     const t = useTranslations()
@@ -27,9 +27,9 @@ export const About = () => {
                 <p className={styles.about__title}>{t("statistic.services.title")}</p>
                 <div className={styles.about__mediaContainer}>
                     <div className={styles.about__media}>
-                        <Flip cascade>
+                        <Zoom cascade>
                             <div className={styles.about__name}>{t("statistic.services.design")}</div>
-                        </Flip>
+                        </Zoom>
                         <Fade right cascade>
                             <div className={styles.about__info}>
                                 <div className={styles.about__list}>
@@ -115,15 +115,15 @@ export const About = () => {
                                 <div className={styles.about__imgmarketing}></div>
                             </div>
                         </Fade>
-                        <Flip cascade>
+                        <Zoom cascade>
                             <div className={styles.about__name}>{t("statistic.services.marketing")}</div>
-                        </Flip>
+                        </Zoom>
                     </div>
 
                     <div className={styles.about__media}>
-                        <Flip cascade>
+                        <Zoom cascade>
                             <div className={styles.about__nametwo} >{t("statistic.services.video")}</div>
-                        </Flip>
+                        </Zoom>
                         <Fade right cascade>
                             <div className={styles.about__info}>
                                 <div className={styles.about__list}>
@@ -210,15 +210,15 @@ export const About = () => {
                                 <div className={styles.about__imgit}></div>
                             </div>
                         </Fade>
-                        <Flip cascade>
+                        <Zoom cascade>
                             <div className={styles.about__nameit}>{t("statistic.services.IT")}</div>
-                        </Flip>
+                        </Zoom>
                     </div>
 
                     <div className={styles.about__media}>
-                        <Flip cascade>
+                        <Zoom cascade>
                             <div className={styles.about__namelast} >{t("statistic.services.bot")}</div>
-                        </Flip>
+                        </Zoom>
                         <Fade right cascade>
                             <div className={styles.about__info}>
                                 <div className={styles.about__list}>

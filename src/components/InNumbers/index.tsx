@@ -3,6 +3,8 @@ import styles from './index.module.sass';
 import { useTranslations } from "next-intl";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { Fade, Zoom } from "react-reveal";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -141,26 +143,28 @@ export const InNumbers: React.FC = () => {
         </div>
         <div className={styles.numbers__cardfourt}>
           <p className={styles.numbers__numbertwo}>
+            <Zoom  cascade>
             <span 
               className={styles.numbers__numberValue} 
-              data-end-value="349" 
-              ref={(el) => numbersRefs.current[7] = el}
+              // data-end-value="349" 
+              // ref={(el) => numbersRefs.current[7] = el}1
             >
               3,49
             </span>
+            </Zoom>
             <span className={styles.numbers__numberSuffixtwo}>МЛН</span>
           </p>
           <p className={styles.numbers__desctwo}>{t("statistic.followers")}</p>
         </div>
         <div className={styles.numbers__cardfive}>
           <p className={styles.numbers__numberlast}>
+          <Zoom cascade>
             <span 
               className={styles.numbers__numberValue} 
-              data-end-value="0.01" 
-              ref={(el) => numbersRefs.current[8] = el}
             >
               0,01
             </span>
+            </Zoom>
             <span className={styles.numbers__numberSuffix}>$</span>
           </p>
           <p className={styles.numbers__desclast}>{t("statistic.cost")}</p>
