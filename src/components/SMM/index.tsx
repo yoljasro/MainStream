@@ -11,7 +11,7 @@ export const SMM = () => {
         <div className={styles.container}>
             <div className={styles.container__smm}>
                 <div className={styles.container__phone}>
-                    <video
+                    <video 
                         autoPlay
                         loop
                         muted
